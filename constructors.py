@@ -14,6 +14,7 @@ print(student1.name, student1.age)
 print(student2.name, student2.age)
 
 """you can also have some default parameters """
+
 class animal:
     def __init__(self, name = "unknown",age = 0):
         self.name = name

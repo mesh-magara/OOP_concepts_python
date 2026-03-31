@@ -52,8 +52,12 @@ class playlist:
         self.songs = ["POP","kill","MOCKING BIRD"]
 
     def add_song(self, song):
-        self.songs.append(song)
-        print(f"Added song '{song}' to {self.name} playlist")
+        if song in self.songs:
+            print("The song already exists in your playlist")
+        else:
+            self.songs.append(song)
+            print(f"Added song '{song}' to {self.name} playlist")
+        
     
     def remove_song(self,song):
         if song in self.songs:

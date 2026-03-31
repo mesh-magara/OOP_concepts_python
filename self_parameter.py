@@ -23,3 +23,25 @@ per1 = Person("meshack",19)
 print(per1.greet())
 per1.age_checker()
 per1.wecloming()
+
+class car:
+    def __init__(self, name,brand):
+        self.name = name
+        self.brand = brand
+
+    def output(self):
+        outputed = {}
+        
+        outputed.update({"Name" : self.name})
+        outputed.update({"Brand" : self.brand})
+        
+        return outputed
+    
+    def printed(self):
+        message = self.output()
+        print(f"The car is of {message}")
+    
+
+car1 = car("Corolla","TOYOTA")
+print(car1.output())
+car1.printed()
