@@ -67,3 +67,7 @@ teacher1.get_details()
 
 student1 = student("mart",23,909033,'Information Technology',45000,'Hockey')
 student1.get_details()
+
+#Test worker
+worker1 = worker("Siminyu",35,2323232,'Store keeper',20000)
+worker1.get_details()
